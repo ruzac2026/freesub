@@ -6,20 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO 01 - xiaohe",
-        "🇳🇴 NO 02 - xiaohe",
-        "🇳🇴 NO 03 - xiaohe",
-        "🇳🇴 NO 04 - xiaohe"
+        "🇳🇴 NO 01 - ruzac",
+        "🇳🇴 NO 02 - ruzac",
+        "🇳🇴 NO 03 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO 01 - xiaohe",
-        "🇳🇴 NO 02 - xiaohe",
-        "🇳🇴 NO 03 - xiaohe",
-        "🇳🇴 NO 04 - xiaohe"
+        "🇳🇴 NO 01 - ruzac",
+        "🇳🇴 NO 02 - ruzac",
+        "🇳🇴 NO 03 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },

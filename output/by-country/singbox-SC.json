@@ -6,18 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - xiaohe",
-        "🇸🇨 SC 02 - xiaohe",
-        "🇸🇨 SC 03 - xiaohe"
+        "🇸🇨 SC 01 - ruzac",
+        "🇸🇨 SC 02 - ruzac",
+        "🇸🇨 SC 03 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - xiaohe",
-        "🇸🇨 SC 02 - xiaohe",
-        "🇸🇨 SC 03 - xiaohe"
+        "🇸🇨 SC 01 - ruzac",
+        "🇸🇨 SC 02 - ruzac",
+        "🇸🇨 SC 03 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },

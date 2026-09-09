@@ -6,28 +6,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL 01 - xiaohe",
-        "🇵🇱 PL 02 - xiaohe",
-        "🇵🇱 PL 03 - xiaohe",
-        "🇵🇱 PL 04 - xiaohe",
-        "🇵🇱 PL 05 - xiaohe",
-        "🇵🇱 PL 06 - xiaohe",
-        "🇵🇱 PL 07 - xiaohe",
-        "🇵🇱 PL 08 - xiaohe"
+        "🇵🇱 PL 01 - ruzac",
+        "🇵🇱 PL 02 - ruzac",
+        "🇵🇱 PL 03 - ruzac",
+        "🇵🇱 PL 04 - ruzac",
+        "🇵🇱 PL 05 - ruzac",
+        "🇵🇱 PL 06 - ruzac",
+        "🇵🇱 PL 07 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL 01 - xiaohe",
-        "🇵🇱 PL 02 - xiaohe",
-        "🇵🇱 PL 03 - xiaohe",
-        "🇵🇱 PL 04 - xiaohe",
-        "🇵🇱 PL 05 - xiaohe",
-        "🇵🇱 PL 06 - xiaohe",
-        "🇵🇱 PL 07 - xiaohe",
-        "🇵🇱 PL 08 - xiaohe"
+        "🇵🇱 PL 01 - ruzac",
+        "🇵🇱 PL 02 - ruzac",
+        "🇵🇱 PL 03 - ruzac",
+        "🇵🇱 PL 04 - ruzac",
+        "🇵🇱 PL 05 - ruzac",
+        "🇵🇱 PL 06 - ruzac",
+        "🇵🇱 PL 07 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },

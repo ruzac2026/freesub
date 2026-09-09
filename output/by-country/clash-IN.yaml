@@ -4,33 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 - xiaohe
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 02 - xiaohe
-  type: vless
-  server: 104.18.2.67
-  port: 443
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in.520782.xyz
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: in.520782.xyz
-- name: 🇮🇳 印度 (India) 03 - xiaohe
+- name: 🇮🇳 印度 (India) 01 - ruzac
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -42,10 +16,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 04 - xiaohe
+- name: 🇮🇳 印度 (India) 02 - ruzac
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -57,7 +31,7 @@ proxies:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 05 - xiaohe
+- name: 🇮🇳 印度 (India) 03 - ruzac
   type: vless
   server: 104.21.69.118
   port: 443
@@ -71,22 +45,21 @@ proxies:
     path: /sync
     headers:
       Host: odd-violet-5440.asdgrweeee13.workers.dev
-- name: 🇮🇳 印度 (India) 06 - xiaohe
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+- name: 🇮🇳 印度 (India) 04 - ruzac
+  type: vless
+  server: 104.18.3.67
+  port: 443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: in.520782.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /cdn/packages/runtime-core.tar.gz
     headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 07 - xiaohe
+      Host: in.520782.xyz
+- name: 🇮🇳 印度 (India) 05 - ruzac
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -101,11 +74,13 @@ proxies:
     path: ''
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 08 - xiaohe
-  type: vless
-  server: 45.131.209.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- name: 🇮🇳 印度 (India) 06 - ruzac
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -113,8 +88,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime04.workers.dev
-- name: 🇮🇳 印度 (India) 09 - xiaohe
+      Host: ''
+- name: 🇮🇳 印度 (India) 07 - ruzac
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -126,33 +101,69 @@ proxies:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 08 - ruzac
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇮🇳 印度 (India) 09 - ruzac
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 50ddfd92-dc79-4777-a256-41e34d56836e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 10 - ruzac
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 - xiaohe
-  - 🇮🇳 印度 (India) 02 - xiaohe
-  - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
-  - 🇮🇳 印度 (India) 07 - xiaohe
-  - 🇮🇳 印度 (India) 08 - xiaohe
-  - 🇮🇳 印度 (India) 09 - xiaohe
+  - 🇮🇳 印度 (India) 01 - ruzac
+  - 🇮🇳 印度 (India) 02 - ruzac
+  - 🇮🇳 印度 (India) 03 - ruzac
+  - 🇮🇳 印度 (India) 04 - ruzac
+  - 🇮🇳 印度 (India) 05 - ruzac
+  - 🇮🇳 印度 (India) 06 - ruzac
+  - 🇮🇳 印度 (India) 07 - ruzac
+  - 🇮🇳 印度 (India) 08 - ruzac
+  - 🇮🇳 印度 (India) 09 - ruzac
+  - 🇮🇳 印度 (India) 10 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 - xiaohe
-  - 🇮🇳 印度 (India) 02 - xiaohe
-  - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
-  - 🇮🇳 印度 (India) 07 - xiaohe
-  - 🇮🇳 印度 (India) 08 - xiaohe
-  - 🇮🇳 印度 (India) 09 - xiaohe
+  - 🇮🇳 印度 (India) 01 - ruzac
+  - 🇮🇳 印度 (India) 02 - ruzac
+  - 🇮🇳 印度 (India) 03 - ruzac
+  - 🇮🇳 印度 (India) 04 - ruzac
+  - 🇮🇳 印度 (India) 05 - ruzac
+  - 🇮🇳 印度 (India) 06 - ruzac
+  - 🇮🇳 印度 (India) 07 - ruzac
+  - 🇮🇳 印度 (India) 08 - ruzac
+  - 🇮🇳 印度 (India) 09 - ruzac
+  - 🇮🇳 印度 (India) 10 - ruzac
 rules:
 - MATCH,PROXIES
