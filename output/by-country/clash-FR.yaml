@@ -6,57 +6,67 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - ruzac
   type: vless
-  server: 35.181.124.186
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  server: 104.21.33.59
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
 - name: 🇫🇷 法国 (France) 02 - ruzac
   type: vless
-  server: 51.77.217.70
+  server: 54.37.136.194
   port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  uuid: 2211972b-a45a-4951-a640-6173d573e637
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-  servername: www.google.com
-  client-fingerprint: firefox
+    public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 03 - ruzac
   type: vless
-  server: 149.202.58.99
+  server: gr068.techinyab.ir
   port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+  servername: play.google.com
+  client-fingerprint: random
 - name: 🇫🇷 法国 (France) 04 - ruzac
   type: vless
-  server: 35.181.124.186
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  server: usejh2.neobo-tooth.ru
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: usejh2.neobo-tooth.ru
 - name: 🇫🇷 法国 (France) 05 - ruzac
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: 2211972b-a45a-4951-a640-6173d573e637
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  reality-opts:
+    public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 06 - ruzac
   type: vless
   server: 149.202.58.99
@@ -72,60 +82,26 @@ proxies:
     headers:
       Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 07 - ruzac
-  type: vless
-  server: 45.144.28.39
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: usejh2.neobo-tooth.ru
 - name: 🇫🇷 法国 (France) 08 - ruzac
-  type: vless
-  server: 45.144.28.39
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: usejh2.neobo-tooth.ru
+  servername: ''
 - name: 🇫🇷 法国 (France) 09 - ruzac
   type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: 2211972b-a45a-4951-a640-6173d573e637
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10 - ruzac
-  type: vless
-  server: 35.157.240.237
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 11 - ruzac
-  type: vless
-  server: usejh2.neobo-tooth.ru
+  server: 45.144.28.39
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -135,8 +111,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 12 - ruzac
+      Host: 45.144.28.39
+- name: 🇫🇷 法国 (France) 10 - ruzac
   type: vless
   server: 149.202.58.99
   port: 443
@@ -150,7 +126,7 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 13 - ruzac
+- name: 🇫🇷 法国 (France) 11 - ruzac
   type: vless
   server: 149.202.58.99
   port: 443
@@ -164,13 +140,44 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 14 - ruzac
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
+- name: 🇫🇷 法国 (France) 12 - ruzac
+  type: vless
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
+- name: 🇫🇷 法国 (France) 13 - ruzac
+  type: vless
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: usejh2.neobo-tooth.ru
+- name: 🇫🇷 法国 (France) 14 - ruzac
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 15 - ruzac
   type: vless
   server: 45.144.28.39
@@ -183,8 +190,27 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 45.144.28.39
+      Host: usejh2.neobo-tooth.ru
 - name: 🇫🇷 法国 (France) 16 - ruzac
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 17 - ruzac
+  type: vless
+  server: 51.38.82.1
+  port: 443
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 18 - ruzac
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -196,14 +222,54 @@ proxies:
     public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 17 - ruzac
-  type: ss
-  server: 83.171.225.55
-  port: 1443
-  cipher: chacha20-ietf-poly1305
-  password: ZjAxZ
+- name: 🇫🇷 法国 (France) 19 - ruzac
+  type: vless
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
-- name: 🇫🇷 法国 (France) 18 - ruzac
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 45.144.28.39
+- name: 🇫🇷 法国 (France) 20 - ruzac
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 21 - ruzac
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 22 - ruzac
+  type: vless
+  server: usejh2.neobo-tooth.ru
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: usejh2.neobo-tooth.ru
+- name: 🇫🇷 法国 (France) 23 - ruzac
   type: vless
   server: 149.202.58.99
   port: 443
@@ -217,7 +283,7 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 19 - ruzac
+- name: 🇫🇷 法国 (France) 24 - ruzac
   type: vless
   server: usejh2.neobo-tooth.ru
   port: 2096
@@ -230,56 +296,6 @@ proxies:
     path: /
     headers:
       Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 20 - ruzac
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 21 - ruzac
-  type: vless
-  server: 35.181.124.186
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 22 - ruzac
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: 2211972b-a45a-4951-a640-6173d573e637
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 23 - ruzac
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 24 - ruzac
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-  servername: www.google.com
-  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 25 - ruzac
   type: vless
   server: 54.37.136.194
@@ -293,6 +309,26 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 26 - ruzac
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 27 - ruzac
+  type: vless
+  server: usejh2.neobo-tooth.ru
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: usejh2.neobo-tooth.ru
+- name: 🇫🇷 法国 (France) 28 - ruzac
   type: vless
   server: 172.67.217.10
   port: 443
@@ -306,45 +342,18 @@ proxies:
     path: /jetiona
     headers:
       Host: bluerocketway-bcc.lat
-- name: 🇫🇷 法国 (France) 27 - ruzac
-  type: vless
-  server: 45.144.28.39
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 45.144.28.39
-- name: 🇫🇷 法国 (France) 28 - ruzac
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
 - name: 🇫🇷 法国 (France) 29 - ruzac
   type: vless
-  server: 51.77.217.70
+  server: 54.37.136.194
   port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  uuid: 2211972b-a45a-4951-a640-6173d573e637
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 30 - ruzac
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
+    public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -379,7 +388,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 27 - ruzac
   - 🇫🇷 法国 (France) 28 - ruzac
   - 🇫🇷 法国 (France) 29 - ruzac
-  - 🇫🇷 法国 (France) 30 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -414,6 +422,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 27 - ruzac
   - 🇫🇷 法国 (France) 28 - ruzac
   - 🇫🇷 法国 (France) 29 - ruzac
-  - 🇫🇷 法国 (France) 30 - ruzac
 rules:
 - MATCH,PROXIES
