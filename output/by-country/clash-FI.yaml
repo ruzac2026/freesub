@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - ruzac
   type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 02 - ruzac
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 03 - ruzac
-  type: vless
   server: 65.109.185.234
   port: 8080
   uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
@@ -45,7 +17,7 @@ proxies:
     path: /
     headers:
       Host: italic.dearhossein-taktaz.ir
-- name: 🇫🇮 FI 04 - ruzac
+- name: 🇫🇮 FI 02 - ruzac
   type: vless
   server: 151.101.56.6
   port: 443
@@ -59,21 +31,7 @@ proxies:
     path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 05 - ruzac
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 06 - ruzac
+- name: 🇫🇮 FI 03 - ruzac
   type: vless
   server: 151.101.56.6
   port: 443
@@ -87,7 +45,7 @@ proxies:
     path: /?TELEGRAM---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 07 - ruzac
+- name: 🇫🇮 FI 04 - ruzac
   type: vless
   server: 185.79.138.71
   port: 448
@@ -108,9 +66,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - ruzac
   - 🇫🇮 FI 03 - ruzac
   - 🇫🇮 FI 04 - ruzac
-  - 🇫🇮 FI 05 - ruzac
-  - 🇫🇮 FI 06 - ruzac
-  - 🇫🇮 FI 07 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -120,8 +75,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - ruzac
   - 🇫🇮 FI 03 - ruzac
   - 🇫🇮 FI 04 - ruzac
-  - 🇫🇮 FI 05 - ruzac
-  - 🇫🇮 FI 06 - ruzac
-  - 🇫🇮 FI 07 - ruzac
 rules:
 - MATCH,PROXIES
