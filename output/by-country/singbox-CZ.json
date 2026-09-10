@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - ruzac"
+        "🇨🇿 CZ 01 - ruzac",
+        "🇨🇿 CZ 02 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - ruzac"
+        "🇨🇿 CZ 01 - ruzac",
+        "🇨🇿 CZ 02 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
