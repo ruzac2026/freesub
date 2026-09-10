@@ -6,34 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG 01 - ruzac",
-        "🇧🇬 BG 02 - ruzac",
-        "🇧🇬 BG 03 - ruzac",
-        "🇧🇬 BG 04 - ruzac",
-        "🇧🇬 BG 05 - ruzac",
-        "🇧🇬 BG 06 - ruzac",
-        "🇧🇬 BG 07 - ruzac",
-        "🇧🇬 BG 08 - ruzac",
-        "🇧🇬 BG 09 - ruzac",
-        "🇧🇬 BG 10 - ruzac",
-        "🇧🇬 BG 11 - ruzac"
+        "🇧🇬 BG 01 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG 01 - ruzac",
-        "🇧🇬 BG 02 - ruzac",
-        "🇧🇬 BG 03 - ruzac",
-        "🇧🇬 BG 04 - ruzac",
-        "🇧🇬 BG 05 - ruzac",
-        "🇧🇬 BG 06 - ruzac",
-        "🇧🇬 BG 07 - ruzac",
-        "🇧🇬 BG 08 - ruzac",
-        "🇧🇬 BG 09 - ruzac",
-        "🇧🇬 BG 10 - ruzac",
-        "🇧🇬 BG 11 - ruzac"
+        "🇧🇬 BG 01 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
