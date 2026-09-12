@@ -13,17 +13,41 @@ proxies:
   udp: true
 - name: 🇦🇪 阿联酋 (UAE) 02 - ruzac
   type: vless
-  server: royal-mode-cf74.210-62d.workers.dev
-  port: 8880
-  uuid: ce977d82-824b-4209-87f1-0719f78d6a2e
+  server: 31.58.181.88
+  port: 8443
+  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 03 - ruzac
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /
     headers:
-      Host: royal-mode-cf74.210-62d.workers.dev
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - ruzac
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +55,8 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - ruzac
   - 🇦🇪 阿联酋 (UAE) 02 - ruzac
+  - 🇦🇪 阿联酋 (UAE) 03 - ruzac
+  - 🇦🇪 阿联酋 (UAE) 04 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +64,7 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - ruzac
   - 🇦🇪 阿联酋 (UAE) 02 - ruzac
+  - 🇦🇪 阿联酋 (UAE) 03 - ruzac
+  - 🇦🇪 阿联酋 (UAE) 04 - ruzac
 rules:
 - MATCH,PROXIES
