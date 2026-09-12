@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 CL 01 - ruzac"
+        "🇸🇨 SC 01 - ruzac",
+        "🇸🇨 SC 02 - ruzac",
+        "🇸🇨 SC 03 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 CL 01 - ruzac"
+        "🇸🇨 SC 01 - ruzac",
+        "🇸🇨 SC 02 - ruzac",
+        "🇸🇨 SC 03 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
