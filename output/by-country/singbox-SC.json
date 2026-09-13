@@ -6,30 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - ruzac",
-        "🇸🇨 SC 02 - ruzac",
-        "🇸🇨 SC 03 - ruzac",
-        "🇸🇨 SC 04 - ruzac",
-        "🇸🇨 SC 05 - ruzac",
-        "🇸🇨 SC 06 - ruzac",
-        "🇸🇨 SC 07 - ruzac",
-        "🇸🇨 SC 08 - ruzac",
-        "🇸🇨 SC 09 - ruzac"
+        "🇸🇨 SC 01 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - ruzac",
-        "🇸🇨 SC 02 - ruzac",
-        "🇸🇨 SC 03 - ruzac",
-        "🇸🇨 SC 04 - ruzac",
-        "🇸🇨 SC 05 - ruzac",
-        "🇸🇨 SC 06 - ruzac",
-        "🇸🇨 SC 07 - ruzac",
-        "🇸🇨 SC 08 - ruzac",
-        "🇸🇨 SC 09 - ruzac"
+        "🇸🇨 SC 01 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
