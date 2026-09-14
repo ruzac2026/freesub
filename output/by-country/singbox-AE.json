@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - ruzac"
+        "🇦🇪 阿联酋 (UAE) 01 - ruzac",
+        "🇦🇪 阿联酋 (UAE) 02 - ruzac",
+        "🇦🇪 阿联酋 (UAE) 03 - ruzac",
+        "🇦🇪 阿联酋 (UAE) 04 - ruzac",
+        "🇦🇪 阿联酋 (UAE) 05 - ruzac",
+        "🇦🇪 阿联酋 (UAE) 06 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - ruzac"
+        "🇦🇪 阿联酋 (UAE) 01 - ruzac",
+        "🇦🇪 阿联酋 (UAE) 02 - ruzac",
+        "🇦🇪 阿联酋 (UAE) 03 - ruzac",
+        "🇦🇪 阿联酋 (UAE) 04 - ruzac",
+        "🇦🇪 阿联酋 (UAE) 05 - ruzac",
+        "🇦🇪 阿联酋 (UAE) 06 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
