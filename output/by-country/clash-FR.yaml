@@ -5,13 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - ruzac
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  type: vless
+  server: 51.38.82.1
+  port: 443
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+  servername: play.google.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 02 - ruzac
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 03 - ruzac
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 04 - ruzac
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -22,7 +55,57 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 03 - ruzac
+- name: 🇫🇷 法国 (France) 05 - ruzac
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 06 - ruzac
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇫🇷 法国 (France) 07 - ruzac
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 08 - ruzac
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 09 - ruzac
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 10 - ruzac
   type: vless
   server: 45.144.28.39
   port: 2096
@@ -35,160 +118,19 @@ proxies:
     path: /
     headers:
       Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 04 - ruzac
-  type: vless
-  server: 45.144.28.39
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 45.144.28.39
-- name: 🇫🇷 法国 (France) 05 - ruzac
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 06 - ruzac
-  type: vless
-  server: gr068.techinyab.ir
-  port: 443
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-  servername: play.google.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 07 - ruzac
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 08 - ruzac
-  type: ss
-  server: 20.111.9.76
-  port: 59380
-  cipher: chacha20-ietf-poly1305
-  password: DdhrBvEX2dHRjaakWHBZUa
-  udp: true
-- name: 🇫🇷 法国 (France) 09 - ruzac
-  type: vless
-  server: 45.144.28.39
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 45.144.28.39
-- name: 🇫🇷 法国 (France) 10 - ruzac
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇫🇷 法国 (France) 11 - ruzac
   type: vless
-  server: gr068.techinyab.ir
-  port: 443
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 12 - ruzac
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: akamaized.net
-- name: 🇫🇷 法国 (France) 13 - ruzac
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 14 - ruzac
-  type: vless
-  server: 51.38.82.1
-  port: 443
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 15 - ruzac
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 16 - ruzac
-  type: vless
-  server: 51.38.82.1
-  port: 443
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-  servername: play.google.com
-  client-fingerprint: chrome
+      Host: 45.144.28.39
 proxy-groups:
 - name: PROXIES
   type: select
@@ -205,11 +147,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 09 - ruzac
   - 🇫🇷 法国 (France) 10 - ruzac
   - 🇫🇷 法国 (France) 11 - ruzac
-  - 🇫🇷 法国 (France) 12 - ruzac
-  - 🇫🇷 法国 (France) 13 - ruzac
-  - 🇫🇷 法国 (France) 14 - ruzac
-  - 🇫🇷 法国 (France) 15 - ruzac
-  - 🇫🇷 法国 (France) 16 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -226,10 +163,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 09 - ruzac
   - 🇫🇷 法国 (France) 10 - ruzac
   - 🇫🇷 法国 (France) 11 - ruzac
-  - 🇫🇷 法国 (France) 12 - ruzac
-  - 🇫🇷 法国 (France) 13 - ruzac
-  - 🇫🇷 法国 (France) 14 - ruzac
-  - 🇫🇷 法国 (France) 15 - ruzac
-  - 🇫🇷 法国 (France) 16 - ruzac
 rules:
 - MATCH,PROXIES
