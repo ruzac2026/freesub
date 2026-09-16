@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - ruzac
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 02 - ruzac
   type: vless
   server: 66.70.179.198
@@ -27,46 +22,29 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 03 - ruzac
   type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 04 - ruzac
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 05 - ruzac
   type: ss
   server: 51.222.200.165
   port: 5000
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 06 - ruzac
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 07 - ruzac
+- name: 🇨🇦 加拿大 (Canada) 05 - ruzac
   type: ss
-  server: 51.222.136.236
-  port: 8882
+  server: 51.222.155.32
+  port: 5003
   cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  password: g5MeD6Ft3CWlJId
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 08 - ruzac
+- name: 🇨🇦 加拿大 (Canada) 06 - ruzac
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -76,6 +54,27 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 07 - ruzac
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
+- name: 🇨🇦 加拿大 (Canada) 08 - ruzac
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇨🇦 加拿大 (Canada) 09 - ruzac
   type: vmess
   server: 134.195.196.211
@@ -88,102 +87,12 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 10 - ruzac
   type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 11 - ruzac
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 12 - ruzac
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 13 - ruzac
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 14 - ruzac
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: seribus.org
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: 🇨🇦 加拿大 (Canada) 15 - ruzac
-  type: ss
-  server: 51.79.49.116
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 16 - ruzac
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: ''
-- name: 🇨🇦 加拿大 (Canada) 17 - ruzac
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 18 - ruzac
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 19 - ruzac
   type: vless
   server: 104.21.70.21
   port: 443
@@ -197,7 +106,17 @@ proxies:
     path: /raccoonwsvless
     headers:
       Host: bodyshine.help
-- name: 🇨🇦 加拿大 (Canada) 20 - ruzac
+- name: 🇨🇦 加拿大 (Canada) 12 - ruzac
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 13 - ruzac
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -207,56 +126,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 21 - ruzac
+- name: 🇨🇦 加拿大 (Canada) 14 - ruzac
   type: vless
-  server: lizca2.footballfantasyforum.com
+  server: 184.107.106.68
   port: 443
   uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
   udp: true
   tls: true
   skip-cert-verify: true
   servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 22 - ruzac
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 23 - ruzac
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 24 - ruzac
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 25 - ruzac
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 26 - ruzac
+- name: 🇨🇦 加拿大 (Canada) 15 - ruzac
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -266,18 +145,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 27 - ruzac
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -298,18 +165,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 13 - ruzac
   - 🇨🇦 加拿大 (Canada) 14 - ruzac
   - 🇨🇦 加拿大 (Canada) 15 - ruzac
-  - 🇨🇦 加拿大 (Canada) 16 - ruzac
-  - 🇨🇦 加拿大 (Canada) 17 - ruzac
-  - 🇨🇦 加拿大 (Canada) 18 - ruzac
-  - 🇨🇦 加拿大 (Canada) 19 - ruzac
-  - 🇨🇦 加拿大 (Canada) 20 - ruzac
-  - 🇨🇦 加拿大 (Canada) 21 - ruzac
-  - 🇨🇦 加拿大 (Canada) 22 - ruzac
-  - 🇨🇦 加拿大 (Canada) 23 - ruzac
-  - 🇨🇦 加拿大 (Canada) 24 - ruzac
-  - 🇨🇦 加拿大 (Canada) 25 - ruzac
-  - 🇨🇦 加拿大 (Canada) 26 - ruzac
-  - 🇨🇦 加拿大 (Canada) 27 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -330,17 +185,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 13 - ruzac
   - 🇨🇦 加拿大 (Canada) 14 - ruzac
   - 🇨🇦 加拿大 (Canada) 15 - ruzac
-  - 🇨🇦 加拿大 (Canada) 16 - ruzac
-  - 🇨🇦 加拿大 (Canada) 17 - ruzac
-  - 🇨🇦 加拿大 (Canada) 18 - ruzac
-  - 🇨🇦 加拿大 (Canada) 19 - ruzac
-  - 🇨🇦 加拿大 (Canada) 20 - ruzac
-  - 🇨🇦 加拿大 (Canada) 21 - ruzac
-  - 🇨🇦 加拿大 (Canada) 22 - ruzac
-  - 🇨🇦 加拿大 (Canada) 23 - ruzac
-  - 🇨🇦 加拿大 (Canada) 24 - ruzac
-  - 🇨🇦 加拿大 (Canada) 25 - ruzac
-  - 🇨🇦 加拿大 (Canada) 26 - ruzac
-  - 🇨🇦 加拿大 (Canada) 27 - ruzac
 rules:
 - MATCH,PROXIES
