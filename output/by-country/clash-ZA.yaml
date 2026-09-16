@@ -13,10 +13,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 02 - ruzac
   type: ss
-  server: 102.37.156.224
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  password: tfAcRikawhNoZAhu
   udp: true
 - name: 🇿🇦 ZA 03 - ruzac
   type: ss
@@ -27,24 +27,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 04 - ruzac
   type: ss
-  server: 20.87.3.84
+  server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: w0Yff67jxd3zXY9g
-  udp: true
-- name: 🇿🇦 ZA 05 - ruzac
-  type: ss
-  server: 20.87.3.84
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: w0Yff67jxd3zXY9g
-  udp: true
-- name: 🇿🇦 ZA 06 - ruzac
-  type: ss
-  server: 139.84.247.164
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -55,8 +41,6 @@ proxy-groups:
   - 🇿🇦 ZA 02 - ruzac
   - 🇿🇦 ZA 03 - ruzac
   - 🇿🇦 ZA 04 - ruzac
-  - 🇿🇦 ZA 05 - ruzac
-  - 🇿🇦 ZA 06 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,7 +50,5 @@ proxy-groups:
   - 🇿🇦 ZA 02 - ruzac
   - 🇿🇦 ZA 03 - ruzac
   - 🇿🇦 ZA 04 - ruzac
-  - 🇿🇦 ZA 05 - ruzac
-  - 🇿🇦 ZA 06 - ruzac
 rules:
 - MATCH,PROXIES
