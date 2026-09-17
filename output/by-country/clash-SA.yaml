@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇦 SA 01 - ruzac
   type: vless
-  server: 91.209.253.244
+  server: 91.209.253.250
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -15,12 +15,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 02 - ruzac
   type: vless
-  server: 91.209.253.250
+  server: 91.209.253.216
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -34,35 +34,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 03 - ruzac
   type: vless
-  server: 91.209.253.216
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 04 - ruzac
-  type: vless
-  server: 91.209.253.119
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 05 - ruzac
-  type: vless
-  server: 91.209.253.109
+  server: 91.209.253.229
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -74,7 +46,21 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 06 - ruzac
+- name: 🇸🇦 SA 04 - ruzac
+  type: vless
+  server: 91.209.253.42
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 05 - ruzac
   type: vless
   server: 91.209.253.244
   port: 443
@@ -88,9 +74,23 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 06 - ruzac
+  type: vless
+  server: 91.209.253.119
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 07 - ruzac
   type: vless
-  server: 91.209.253.229
+  server: 91.209.253.25
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -104,7 +104,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 08 - ruzac
   type: vless
-  server: 91.209.253.109
+  server: 91.209.253.244
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -113,12 +113,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 09 - ruzac
   type: vless
-  server: 91.209.253.216
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -132,7 +132,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 10 - ruzac
   type: vless
-  server: 91.209.253.216
+  server: 91.209.253.68
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -169,12 +169,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 13 - ruzac
   type: vless
-  server: 91.209.253.42
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -188,48 +188,6 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 14 - ruzac
   type: vless
-  server: 91.209.253.119
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 15 - ruzac
-  type: vless
-  server: 91.209.253.25
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 16 - ruzac
-  type: vless
-  server: 188.130.207.30
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇦 SA 17 - ruzac
-  type: vless
   server: 91.209.253.42
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
@@ -242,7 +200,7 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 18 - ruzac
+- name: 🇸🇦 SA 15 - ruzac
   type: vless
   server: 91.209.253.243
   port: 443
@@ -253,21 +211,7 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 19 - ruzac
-  type: vless
-  server: 91.209.253.243
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
 proxy-groups:
@@ -290,10 +234,6 @@ proxy-groups:
   - 🇸🇦 SA 13 - ruzac
   - 🇸🇦 SA 14 - ruzac
   - 🇸🇦 SA 15 - ruzac
-  - 🇸🇦 SA 16 - ruzac
-  - 🇸🇦 SA 17 - ruzac
-  - 🇸🇦 SA 18 - ruzac
-  - 🇸🇦 SA 19 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -314,9 +254,5 @@ proxy-groups:
   - 🇸🇦 SA 13 - ruzac
   - 🇸🇦 SA 14 - ruzac
   - 🇸🇦 SA 15 - ruzac
-  - 🇸🇦 SA 16 - ruzac
-  - 🇸🇦 SA 17 - ruzac
-  - 🇸🇦 SA 18 - ruzac
-  - 🇸🇦 SA 19 - ruzac
 rules:
 - MATCH,PROXIES
