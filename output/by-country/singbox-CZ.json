@@ -6,34 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - ruzac",
-        "🇨🇿 CZ 02 - ruzac",
-        "🇨🇿 CZ 03 - ruzac",
-        "🇨🇿 CZ 04 - ruzac",
-        "🇨🇿 CZ 05 - ruzac",
-        "🇨🇿 CZ 06 - ruzac",
-        "🇨🇿 CZ 07 - ruzac",
-        "🇨🇿 CZ 08 - ruzac",
-        "🇨🇿 CZ 09 - ruzac",
-        "🇨🇿 CZ 10 - ruzac",
-        "🇨🇿 CZ 11 - ruzac"
+        "🇨🇿 CZ 01 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - ruzac",
-        "🇨🇿 CZ 02 - ruzac",
-        "🇨🇿 CZ 03 - ruzac",
-        "🇨🇿 CZ 04 - ruzac",
-        "🇨🇿 CZ 05 - ruzac",
-        "🇨🇿 CZ 06 - ruzac",
-        "🇨🇿 CZ 07 - ruzac",
-        "🇨🇿 CZ 08 - ruzac",
-        "🇨🇿 CZ 09 - ruzac",
-        "🇨🇿 CZ 10 - ruzac",
-        "🇨🇿 CZ 11 - ruzac"
+        "🇨🇿 CZ 01 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
