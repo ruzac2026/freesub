@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - ruzac"
+        "🇫🇮 FI 01 - ruzac",
+        "🇫🇮 FI 02 - ruzac",
+        "🇫🇮 FI 03 - ruzac",
+        "🇫🇮 FI 04 - ruzac",
+        "🇫🇮 FI 05 - ruzac",
+        "🇫🇮 FI 06 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - ruzac"
+        "🇫🇮 FI 01 - ruzac",
+        "🇫🇮 FI 02 - ruzac",
+        "🇫🇮 FI 03 - ruzac",
+        "🇫🇮 FI 04 - ruzac",
+        "🇫🇮 FI 05 - ruzac",
+        "🇫🇮 FI 06 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
