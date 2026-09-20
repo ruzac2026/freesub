@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - ruzac
   type: vless
-  server: 31.43.179.36
+  server: 31.43.179.106
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -29,10 +29,122 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
 - name: 🇰🇿 KZ 03 - ruzac
+  type: vless
+  server: 31.43.179.170
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 04 - ruzac
+  type: vless
+  server: 31.43.179.109
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 05 - ruzac
+  type: vless
+  server: 31.43.179.137
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 06 - ruzac
+  type: vless
+  server: 31.43.179.36
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 07 - ruzac
+  type: vless
+  server: 31.43.179.200
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 08 - ruzac
+  type: vless
+  server: 31.43.179.25
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 09 - ruzac
+  type: vless
+  server: 31.43.179.25
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 10 - ruzac
+  type: vless
+  server: 31.43.179.200
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 11 - ruzac
   type: vless
   server: 31.43.179.87
   port: 443
@@ -43,12 +155,12 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇰🇿 KZ 04 - ruzac
+- name: 🇰🇿 KZ 12 - ruzac
   type: vless
-  server: 31.43.179.106
+  server: 31.43.179.200
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -57,7 +169,21 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇰🇿 KZ 13 - ruzac
+  type: vless
+  server: 31.43.179.20
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: xi.tbv.ccwu.cc
 proxy-groups:
@@ -69,6 +195,15 @@ proxy-groups:
   - 🇰🇿 KZ 02 - ruzac
   - 🇰🇿 KZ 03 - ruzac
   - 🇰🇿 KZ 04 - ruzac
+  - 🇰🇿 KZ 05 - ruzac
+  - 🇰🇿 KZ 06 - ruzac
+  - 🇰🇿 KZ 07 - ruzac
+  - 🇰🇿 KZ 08 - ruzac
+  - 🇰🇿 KZ 09 - ruzac
+  - 🇰🇿 KZ 10 - ruzac
+  - 🇰🇿 KZ 11 - ruzac
+  - 🇰🇿 KZ 12 - ruzac
+  - 🇰🇿 KZ 13 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +213,14 @@ proxy-groups:
   - 🇰🇿 KZ 02 - ruzac
   - 🇰🇿 KZ 03 - ruzac
   - 🇰🇿 KZ 04 - ruzac
+  - 🇰🇿 KZ 05 - ruzac
+  - 🇰🇿 KZ 06 - ruzac
+  - 🇰🇿 KZ 07 - ruzac
+  - 🇰🇿 KZ 08 - ruzac
+  - 🇰🇿 KZ 09 - ruzac
+  - 🇰🇿 KZ 10 - ruzac
+  - 🇰🇿 KZ 11 - ruzac
+  - 🇰🇿 KZ 12 - ruzac
+  - 🇰🇿 KZ 13 - ruzac
 rules:
 - MATCH,PROXIES
