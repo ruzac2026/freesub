@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - ruzac
   type: vless
-  server: 195.85.23.248
+  server: 195.85.23.75
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - ruzac
   type: vless
-  server: 195.85.23.111
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -29,7 +29,7 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 03 - ruzac
@@ -43,12 +43,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 04 - ruzac
   type: vless
-  server: 195.85.23.29
+  server: cz1.zuoai.cf
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -62,6 +62,84 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 05 - ruzac
   type: vless
+  server: 151.101.1.194
+  port: 80
+  uuid: 6795c884-7f09-4777-b779-76d0d6d6c0a1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: simorghfr.global.ssl.fastly.net
+- name: 🇨🇿 CZ 06 - ruzac
+  type: vless
+  server: 151.101.1.194
+  port: 80
+  uuid: e732cb07-4a31-49d3-9122-61dc1f68334e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: simorghfr.global.ssl.fastly.net
+- name: 🇨🇿 CZ 07 - ruzac
+  type: vless
+  server: 108.162.198.178
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 08 - ruzac
+  type: vless
+  server: 151.101.1.194
+  port: 80
+  uuid: c19dcd53-1fed-4147-bdb6-b3d318c8d9f3
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: simorghfr.global.ssl.fastly.net
+- name: 🇨🇿 CZ 09 - ruzac
+  type: vless
+  server: 104.18.34.14
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tlssecurity=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 10 - ruzac
+  type: vless
+  server: 151.101.1.194
+  port: 80
+  uuid: 8c016c41-1e60-457f-bbdf-e66729612079
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: simorghfr.global.ssl.fastly.net
+- name: 🇨🇿 CZ 11 - ruzac
+  type: vless
   server: 195.85.23.88
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
@@ -74,6 +152,62 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 12 - ruzac
+  type: vless
+  server: 195.85.23.252
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 13 - ruzac
+  type: vless
+  server: 195.85.23.248
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 14 - ruzac
+  type: vless
+  server: 195.85.23.29
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 15 - ruzac
+  type: vless
+  server: 195.85.23.252
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +218,16 @@ proxy-groups:
   - 🇨🇿 CZ 03 - ruzac
   - 🇨🇿 CZ 04 - ruzac
   - 🇨🇿 CZ 05 - ruzac
+  - 🇨🇿 CZ 06 - ruzac
+  - 🇨🇿 CZ 07 - ruzac
+  - 🇨🇿 CZ 08 - ruzac
+  - 🇨🇿 CZ 09 - ruzac
+  - 🇨🇿 CZ 10 - ruzac
+  - 🇨🇿 CZ 11 - ruzac
+  - 🇨🇿 CZ 12 - ruzac
+  - 🇨🇿 CZ 13 - ruzac
+  - 🇨🇿 CZ 14 - ruzac
+  - 🇨🇿 CZ 15 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +238,15 @@ proxy-groups:
   - 🇨🇿 CZ 03 - ruzac
   - 🇨🇿 CZ 04 - ruzac
   - 🇨🇿 CZ 05 - ruzac
+  - 🇨🇿 CZ 06 - ruzac
+  - 🇨🇿 CZ 07 - ruzac
+  - 🇨🇿 CZ 08 - ruzac
+  - 🇨🇿 CZ 09 - ruzac
+  - 🇨🇿 CZ 10 - ruzac
+  - 🇨🇿 CZ 11 - ruzac
+  - 🇨🇿 CZ 12 - ruzac
+  - 🇨🇿 CZ 13 - ruzac
+  - 🇨🇿 CZ 14 - ruzac
+  - 🇨🇿 CZ 15 - ruzac
 rules:
 - MATCH,PROXIES
