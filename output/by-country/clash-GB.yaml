@@ -5,53 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - ruzac
-  type: vless
-  server: 91.193.58.195
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 02 - ruzac
-  type: vless
-  server: 91.193.58.117
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 03 - ruzac
-  type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 04 - ruzac
   type: ss
   server: 149.102.149.207
   port: 80
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 02 - ruzac
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 03 - ruzac
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 04 - ruzac
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 05 - ruzac
   type: vmess
@@ -64,101 +51,39 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇬🇧 英国 (United Kingdom) 06 - ruzac
-  type: vless
-  server: 63.141.128.22
-  port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-- name: 🇬🇧 英国 (United Kingdom) 07 - ruzac
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 08 - ruzac
   type: ss
   server: 149.102.149.207
   port: 443
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
   udp: true
+- name: 🇬🇧 英国 (United Kingdom) 07 - ruzac
+  type: vless
+  server: 186.190.211.188
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 08 - ruzac
+  type: ss
+  server: 149.102.132.184
+  port: 443
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 09 - ruzac
-  type: vless
-  server: 91.193.59.191
-  port: 2087
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso5.1d.mom
 - name: 🇬🇧 英国 (United Kingdom) 10 - ruzac
-  type: vless
-  server: 104.17.148.22
-  port: 443
-  uuid: 0432902e-6604-40cd-bbd0-57ab4e5d909f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bPB-4dc4958B.hXjkcgHcHv.woRkeRs.deV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiOENNZnB6WTgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    headers:
-      Host: bpb-4dc4958b.hxjkcghchv.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 11 - ruzac
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 12 - ruzac
-  type: vless
-  server: 172.67.140.37
-  port: 443
-  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/ERYN0G44hia16zhR
-    headers:
-      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 13 - ruzac
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 14 - ruzac
   type: vless
   server: 129.121.95.159
   port: 443
@@ -172,277 +97,70 @@ proxies:
     path: /connect
     headers:
       Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 15 - ruzac
-  type: vless
-  server: 91.193.58.141
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+- name: 🇬🇧 英国 (United Kingdom) 11 - ruzac
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: /Telegram-WangCai2🇨🇳
+    path: /vmess/
     headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 16 - ruzac
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 17 - ruzac
-  type: vless
-  server: 78.129.208.44
-  port: 421
-  uuid: a9900333-444b-4a36-a2f0-0567946c47cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
-  servername: chistomat.dry.care
-  client-fingerprint: ios
-- name: 🇬🇧 英国 (United Kingdom) 18 - ruzac
-  type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 19 - ruzac
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 20 - ruzac
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 21 - ruzac
-  type: vless
-  server: 78.129.208.44
-  port: 421
-  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
-  servername: chistomat.dry.care
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 22 - ruzac
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 23 - ruzac
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 24 - ruzac
-  type: ss
-  server: 51.38.71.51
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 25 - ruzac
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 12 - ruzac
   type: ss
   server: 158.173.221.214
   port: 11001
   cipher: chacha20-ietf-poly1305
   password: c58d16e593d44f42
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 26 - ruzac
-  type: vless
-  server: 185.193.29.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+- name: 🇬🇧 英国 (United Kingdom) 13 - ruzac
+  type: ss
+  server: 51.38.71.51
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇬🇧 英国 (United Kingdom) 27 - ruzac
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇬🇧 英国 (United Kingdom) 14 - ruzac
+  type: ss
+  server: 149.102.132.184
+  port: 80
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 28 - ruzac
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 29 - ruzac
-  type: vless
-  server: 8.6.112.9
-  port: 443
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 30 - ruzac
-  type: vless
-  server: 57.128.177.198
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp58.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+fp=chrome
-    headers:
-      Host: vp58.cc.cd
-- name: 🇬🇧 英国 (United Kingdom) 31 - ruzac
-  type: vless
-  server: 91.193.58.141
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 32 - ruzac
-  type: vless
-  server: 91.193.58.117
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 33 - ruzac
-  type: vless
-  server: 172.67.203.158
-  port: 443
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR
-    headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 34 - ruzac
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 35 - ruzac
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 36 - ruzac
+- name: 🇬🇧 英国 (United Kingdom) 15 - ruzac
   type: ss
   server: 141.98.101.181
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 37 - ruzac
-  type: vless
-  server: 139.59.189.127
-  port: 443
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+- name: 🇬🇧 英国 (United Kingdom) 16 - ruzac
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shy-fog-af06.alvlirm333.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shy-fog-af06.alvlirm333.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 38 - ruzac
-  type: vless
-  server: 104.21.79.199
+- name: 🇬🇧 英国 (United Kingdom) 17 - ruzac
+  type: ss
+  server: 149.102.149.207
   port: 443
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
-  network: ws
-  ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0
-    headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 18 - ruzac
+  type: ss
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -466,26 +184,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 16 - ruzac
   - 🇬🇧 英国 (United Kingdom) 17 - ruzac
   - 🇬🇧 英国 (United Kingdom) 18 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 19 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 20 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 21 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 22 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 23 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 24 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 25 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 26 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 27 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 28 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 29 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 30 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 31 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 32 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 33 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 34 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 35 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 36 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 37 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 38 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -509,25 +207,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 16 - ruzac
   - 🇬🇧 英国 (United Kingdom) 17 - ruzac
   - 🇬🇧 英国 (United Kingdom) 18 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 19 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 20 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 21 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 22 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 23 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 24 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 25 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 26 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 27 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 28 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 29 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 30 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 31 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 32 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 33 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 34 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 35 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 36 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 37 - ruzac
-  - 🇬🇧 英国 (United Kingdom) 38 - ruzac
 rules:
 - MATCH,PROXIES
