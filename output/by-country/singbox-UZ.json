@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - ruzac"
+        "🇺🇿 UZ 01 - ruzac",
+        "🇺🇿 UZ 02 - ruzac",
+        "🇺🇿 UZ 03 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - ruzac"
+        "🇺🇿 UZ 01 - ruzac",
+        "🇺🇿 UZ 02 - ruzac",
+        "🇺🇿 UZ 03 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
