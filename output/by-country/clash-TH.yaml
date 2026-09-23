@@ -15,29 +15,30 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: qq
 - name: 🇹🇭 TH 02 - ruzac
   type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  server: 104.21.12.116
+  port: 8880
+  uuid: ad85a1ce-3519-4634-9ea1-66c60d3694ba
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: little-pond-8731.81-68e.workers.dev
 - name: 🇹🇭 TH 03 - ruzac
   type: vless
-  server: 34.15.162.1
+  server: 34.15.176.240
   port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇭 TH 04 - ruzac
@@ -51,19 +52,20 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇹🇭 TH 05 - ruzac
   type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 TH 06 - ruzac
   type: vless
   server: 34.15.162.1
@@ -87,32 +89,8 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: edge
 - name: 🇹🇭 TH 08 - ruzac
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 TH 09 - ruzac
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇹🇭 TH 10 - ruzac
   type: vless
   server: 43.133.110.81
   port: 443
@@ -126,6 +104,30 @@ proxies:
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇹🇭 TH 09 - ruzac
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 TH 10 - ruzac
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 11 - ruzac
   type: vless
   server: 34.15.162.1
@@ -137,7 +139,31 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
+- name: 🇹🇭 TH 12 - ruzac
+  type: vless
+  server: 34.15.162.1
+  port: 443
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇹🇭 TH 13 - ruzac
+  type: vless
+  server: 34.15.176.240
+  port: 443
+  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -154,6 +180,8 @@ proxy-groups:
   - 🇹🇭 TH 09 - ruzac
   - 🇹🇭 TH 10 - ruzac
   - 🇹🇭 TH 11 - ruzac
+  - 🇹🇭 TH 12 - ruzac
+  - 🇹🇭 TH 13 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -170,5 +198,7 @@ proxy-groups:
   - 🇹🇭 TH 09 - ruzac
   - 🇹🇭 TH 10 - ruzac
   - 🇹🇭 TH 11 - ruzac
+  - 🇹🇭 TH 12 - ruzac
+  - 🇹🇭 TH 13 - ruzac
 rules:
 - MATCH,PROXIES
