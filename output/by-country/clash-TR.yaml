@@ -4,29 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 FI 01 - ruzac
+- name: 🇹🇷 土耳其 (Turkey) 01 - ruzac
   type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  server: 185.71.219.128
+  port: 2052
+  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  servername: 185.71.219.128
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 FI 01 - ruzac
+  - 🇹🇷 土耳其 (Turkey) 01 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 FI 01 - ruzac
+  - 🇹🇷 土耳其 (Turkey) 01 - ruzac
 rules:
 - MATCH,PROXIES
