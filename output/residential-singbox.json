@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - ruzac",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ruzac",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - ruzac"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ruzac",
+        "🇨🇦 加拿大 (Canada) 02 (家宽) - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - ruzac",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - ruzac",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - ruzac"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - ruzac",
+        "🇨🇦 加拿大 (Canada) 02 (家宽) - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
