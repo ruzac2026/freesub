@@ -6,36 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - ruzac",
-        "🇹🇭 TH 02 - ruzac",
-        "🇹🇭 TH 03 - ruzac",
-        "🇹🇭 TH 04 - ruzac",
-        "🇹🇭 TH 05 - ruzac",
-        "🇹🇭 TH 06 - ruzac",
-        "🇹🇭 TH 07 - ruzac",
-        "🇹🇭 TH 08 - ruzac",
-        "🇹🇭 TH 09 - ruzac",
-        "🇹🇭 TH 10 - ruzac",
-        "🇹🇭 TH 11 - ruzac",
-        "🇹🇭 TH 12 - ruzac"
+        "🇹🇭 TH 01 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - ruzac",
-        "🇹🇭 TH 02 - ruzac",
-        "🇹🇭 TH 03 - ruzac",
-        "🇹🇭 TH 04 - ruzac",
-        "🇹🇭 TH 05 - ruzac",
-        "🇹🇭 TH 06 - ruzac",
-        "🇹🇭 TH 07 - ruzac",
-        "🇹🇭 TH 08 - ruzac",
-        "🇹🇭 TH 09 - ruzac",
-        "🇹🇭 TH 10 - ruzac",
-        "🇹🇭 TH 11 - ruzac",
-        "🇹🇭 TH 12 - ruzac"
+        "🇹🇭 TH 01 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -8,21 +8,21 @@ proxies:
   type: vless
   server: 151.101.56.6
   port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
   udp: true
   tls: true
   skip-cert-verify: true
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?
+    path: /
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 02 - ruzac
   type: vless
   server: k2.cloud--vpn.site
   port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
   udp: true
   tls: true
   skip-cert-verify: true
@@ -33,104 +33,6 @@ proxies:
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 03 - ruzac
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 04 - ruzac
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 05 - ruzac
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 06 - ruzac
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 07 - ruzac
-  type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kayko.global.ssl.fastly.net
-- name: 🇫🇮 FI 08 - ruzac
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPNfp=chrome
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 09 - ruzac
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 10 - ruzac
   type: vless
   server: 185.79.138.71
   port: 448
@@ -150,13 +52,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - ruzac
   - 🇫🇮 FI 02 - ruzac
   - 🇫🇮 FI 03 - ruzac
-  - 🇫🇮 FI 04 - ruzac
-  - 🇫🇮 FI 05 - ruzac
-  - 🇫🇮 FI 06 - ruzac
-  - 🇫🇮 FI 07 - ruzac
-  - 🇫🇮 FI 08 - ruzac
-  - 🇫🇮 FI 09 - ruzac
-  - 🇫🇮 FI 10 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -165,12 +60,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - ruzac
   - 🇫🇮 FI 02 - ruzac
   - 🇫🇮 FI 03 - ruzac
-  - 🇫🇮 FI 04 - ruzac
-  - 🇫🇮 FI 05 - ruzac
-  - 🇫🇮 FI 06 - ruzac
-  - 🇫🇮 FI 07 - ruzac
-  - 🇫🇮 FI 08 - ruzac
-  - 🇫🇮 FI 09 - ruzac
-  - 🇫🇮 FI 10 - ruzac
 rules:
 - MATCH,PROXIES
