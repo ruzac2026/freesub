@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 VN 01 - ruzac
+- name: 🇹🇭 TH 01 - ruzac
   type: vless
-  server: 160.187.1.101
-  port: 443
-  uuid: c92e12ca-ea66-4785-8675-652b35134117
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: thus-k.netnode.cc.cd
   network: ws
   ws-opts:
-    path: /t.me/daily_free_vpn
+    path: /ws
     headers:
-      Host: thus-k.netnode.cc.cd
+      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 VN 01 - ruzac
+  - 🇹🇭 TH 01 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 VN 01 - ruzac
+  - 🇹🇭 TH 01 - ruzac
 rules:
 - MATCH,PROXIES
