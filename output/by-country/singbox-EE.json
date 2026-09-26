@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - ruzac",
-        "🇦🇺 澳大利亚 (Australia) 02 - ruzac"
+        "🇪🇪 EE 01 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - ruzac",
-        "🇦🇺 澳大利亚 (Australia) 02 - ruzac"
+        "🇪🇪 EE 01 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
