@@ -9,14 +9,14 @@ proxies:
   server: 20.234.96.89
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: r732TlgjWIjfRcok
+  password: V3WiGKNQiqOCsT60
   udp: true
 - name: 🇮🇪 IE 02 - ruzac
   type: ss
   server: 20.234.96.89
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: V3WiGKNQiqOCsT60
+  password: C8QhmBLJzhKo2JHR
   udp: true
 - name: 🇮🇪 IE 03 - ruzac
   type: ss
@@ -32,6 +32,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: C8QhmBLJzhKo2JHR
   udp: true
+- name: 🇮🇪 IE 05 - ruzac
+  type: ss
+  server: 20.234.96.89
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: r732TlgjWIjfRcok
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +48,7 @@ proxy-groups:
   - 🇮🇪 IE 02 - ruzac
   - 🇮🇪 IE 03 - ruzac
   - 🇮🇪 IE 04 - ruzac
+  - 🇮🇪 IE 05 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +58,6 @@ proxy-groups:
   - 🇮🇪 IE 02 - ruzac
   - 🇮🇪 IE 03 - ruzac
   - 🇮🇪 IE 04 - ruzac
+  - 🇮🇪 IE 05 - ruzac
 rules:
 - MATCH,PROXIES
