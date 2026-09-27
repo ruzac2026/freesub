@@ -6,6 +6,57 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - ruzac
   type: vless
+  server: 185.229.9.160
+  port: 443
+  uuid: 9e4f675b-d6bf-42d1-be55-389f622783af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4Y0QLEasqtkWqfbrRedWqrZSPTnB14FDfI9q1v5SsHs
+  servername: smartcaptcha.yandexcloud.net
+  client-fingerprint: safari
+- name: 🇷🇺 俄罗斯 (Russia) 02 - ruzac
+  type: vless
+  server: 172.64.32.103
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - ruzac
+  type: vless
+  server: 172.64.229.170
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - ruzac
+  type: vless
+  server: 172.64.229.2
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 05 - ruzac
+  type: vless
   server: fbsv6.guardora.pro
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
@@ -18,13 +69,6 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 02 - ruzac
-  type: ss
-  server: 139.100.236.74
-  port: 3
-  cipher: chacha20-ietf-poly1305
-  password: WxYpOK1iPSJySbVNMMJDtw
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +76,9 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - ruzac
   - 🇷🇺 俄罗斯 (Russia) 02 - ruzac
+  - 🇷🇺 俄罗斯 (Russia) 03 - ruzac
+  - 🇷🇺 俄罗斯 (Russia) 04 - ruzac
+  - 🇷🇺 俄罗斯 (Russia) 05 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +86,8 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - ruzac
   - 🇷🇺 俄罗斯 (Russia) 02 - ruzac
+  - 🇷🇺 俄罗斯 (Russia) 03 - ruzac
+  - 🇷🇺 俄罗斯 (Russia) 04 - ruzac
+  - 🇷🇺 俄罗斯 (Russia) 05 - ruzac
 rules:
 - MATCH,PROXIES
