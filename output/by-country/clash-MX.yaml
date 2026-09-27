@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - ruzac
-  type: ss
-  server: 124.151.25.50
-  port: 8024
-  cipher: aes-128-gcm
-  password: 2wsxcde4
+- name: 🇲🇽 MX 01 - ruzac
+  type: vless
+  server: 45.164.20.114
+  port: 10226
+  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - ruzac
+  - 🇲🇽 MX 01 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - ruzac
+  - 🇲🇽 MX 01 - ruzac
 rules:
 - MATCH,PROXIES
