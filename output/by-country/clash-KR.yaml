@@ -5,31 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - ruzac
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 02 - ruzac
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 03 - ruzac
   type: vless
   server: 158.247.253.111
   port: 2087
@@ -43,28 +18,17 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 04 - ruzac
-  type: vless
-  server: 158.247.253.111
-  port: 2087
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+- name: 🇰🇷 韩国 (South Korea) 02 - ruzac
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 05 - ruzac
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 06 - ruzac
+- name: 🇰🇷 韩国 (South Korea) 03 - ruzac
   type: vless
   server: 158.247.253.111
   port: 2087
@@ -78,34 +42,7 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 07 - ruzac
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - ruzac
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - ruzac
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 10 - ruzac
+- name: 🇰🇷 韩国 (South Korea) 04 - ruzac
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -117,6 +54,114 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 05 - ruzac
+  type: vless
+  server: 158.247.253.111
+  port: 2087
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇰🇷 韩国 (South Korea) 06 - ruzac
+  type: vless
+  server: 158.247.253.111
+  port: 2087
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /+
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇰🇷 韩国 (South Korea) 07 - ruzac
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - ruzac
+  type: vless
+  server: 158.247.253.111
+  port: 2087
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇰🇷 韩国 (South Korea) 09 - ruzac
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 10 - ruzac
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 11 - ruzac
+  type: vless
+  server: 123.111.169.70
+  port: 2083
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇰🇷 韩国 (South Korea) 12 - ruzac
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 13 - ruzac
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -132,6 +177,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - ruzac
   - 🇰🇷 韩国 (South Korea) 09 - ruzac
   - 🇰🇷 韩国 (South Korea) 10 - ruzac
+  - 🇰🇷 韩国 (South Korea) 11 - ruzac
+  - 🇰🇷 韩国 (South Korea) 12 - ruzac
+  - 🇰🇷 韩国 (South Korea) 13 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -147,5 +195,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - ruzac
   - 🇰🇷 韩国 (South Korea) 09 - ruzac
   - 🇰🇷 韩国 (South Korea) 10 - ruzac
+  - 🇰🇷 韩国 (South Korea) 11 - ruzac
+  - 🇰🇷 韩国 (South Korea) 12 - ruzac
+  - 🇰🇷 韩国 (South Korea) 13 - ruzac
 rules:
 - MATCH,PROXIES

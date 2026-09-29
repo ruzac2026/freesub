@@ -6,110 +6,6 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - ruzac
   type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: 163.8.195.241
-- name: 🇩🇪 德国 (Germany) 02 - ruzac
-  type: vless
-  server: 94.249.225.106
-  port: 443
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: oFuK9Xldbcr064LYxzvc-wGEQpdTs5J3ybFuOXlW0SQ
-  servername: thnet.krusofiya.fun
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 03 - ruzac
-  type: vless
-  server: smart.avenone.ir
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 04 - ruzac
-  type: vmess
-  server: 193.108.117.54
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇩🇪 德国 (Germany) 05 - ruzac
-  type: vmess
-  server: 193.108.117.54
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aidrivercat.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 06 - ruzac
-  type: vmess
-  server: 193.108.117.54
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇩🇪 德国 (Germany) 07 - ruzac
-  type: ss
-  server: 130.61.113.67
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: blAJWikPmYuU27XuzkTPQc+WLKHKmK5PluU5rt1miwU=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 08 - ruzac
-  type: vmess
-  server: aidrivercat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇩🇪 德国 (Germany) 09 - ruzac
-  type: vless
   server: 57.129.41.216
   port: 80
   uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
@@ -121,61 +17,102 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 10 - ruzac
+- name: 🇩🇪 德国 (Germany) 02 - ruzac
   type: vless
-  server: 94.249.225.106
+  server: rubifen.adaspoloandco.com
   port: 443
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: oFuK9Xldbcr064LYxzvc-wGEQpdTs5J3ybFuOXlW0SQ
-  servername: thnet.krusofiya.fun
-  client-fingerprint: qq
-- name: 🇩🇪 德国 (Germany) 11 - ruzac
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
-- name: 🇩🇪 德国 (Germany) 12 - ruzac
-  type: vmess
-  server: aidrivercat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aidrivercat.org
+  servername: rubifen.adaspoloandco.com
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /GOrbEh
     headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 13 - ruzac
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 03 - ruzac
   type: vless
-  server: 94.249.225.106
+  server: 188.114.97.6
   port: 443
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: oFuK9Xldbcr064LYxzvc-wGEQpdTs5J3ybFuOXlW0SQ
-  servername: thnet.krusofiya.fun
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 14 - ruzac
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇩🇪 德国 (Germany) 04 - ruzac
+  type: vless
+  server: 2.26.30.216
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
-- name: 🇩🇪 德国 (Germany) 15 - ruzac
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇩🇪 德国 (Germany) 05 - ruzac
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇩🇪 德国 (Germany) 06 - ruzac
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 07 - ruzac
+  type: ss
+  server: 130.61.45.32
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: YZxVc5sP8MqNhcA45ia3e1WiebiWSSePUk0K4UZF/UE=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 08 - ruzac
+  type: vless
+  server: 188.114.97.6
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇩🇪 德国 (Germany) 09 - ruzac
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇩🇪 德国 (Germany) 10 - ruzac
   type: vless
   server: 81.95.4.189
   port: 443
@@ -189,6 +126,55 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 11 - ruzac
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 12 - ruzac
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 13 - ruzac
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 14 - ruzac
+  type: vless
+  server: 188.114.97.6
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇩🇪 德国 (Germany) 15 - ruzac
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 16 - ruzac
   type: ss
   server: 185.226.172.8
@@ -197,51 +183,181 @@ proxies:
   password: XKFKl2rULjIp74
   udp: true
 - name: 🇩🇪 德国 (Germany) 17 - ruzac
-  type: vless
-  server: 94.249.225.106
+  type: vmess
+  server: 193.108.117.54
   port: 443
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: oFuK9Xldbcr064LYxzvc-wGEQpdTs5J3ybFuOXlW0SQ
-  servername: thnet.krusofiya.fun
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 18 - ruzac
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 19 - ruzac
-  type: vless
-  server: 35.157.240.237
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
+  servername: ''
   network: ws
   ws-opts:
-    path: /vws/
+    path: /linkvws
     headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 20 - ruzac
+      Host: ''
+- name: 🇩🇪 德国 (Germany) 18 - ruzac
   type: vless
-  server: 94.249.225.106
-  port: 443
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
+  server: 188.114.97.6
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇩🇪 德国 (Germany) 19 - ruzac
+  type: vless
+  server: 188.114.97.6
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇩🇪 德国 (Germany) 20 - ruzac
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 21 - ruzac
+  type: vless
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: oFuK9Xldbcr064LYxzvc-wGEQpdTs5J3ybFuOXlW0SQ
-  servername: thnet.krusofiya.fun
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 21 - ruzac
+  servername: media-se.compressor.work
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 95.163.232.171
+- name: 🇩🇪 德国 (Germany) 22 - ruzac
+  type: vless
+  server: 188.114.97.6
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇩🇪 德国 (Germany) 23 - ruzac
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇩🇪 德国 (Germany) 24 - ruzac
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: 163.8.195.241
+- name: 🇩🇪 德国 (Germany) 25 - ruzac
+  type: vless
+  server: 37.148.204.142
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: '%2F'
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇩🇪 德国 (Germany) 26 - ruzac
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 27 - ruzac
+  type: vless
+  server: 104.21.204.72
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇩🇪 德国 (Germany) 28 - ruzac
+  type: vless
+  server: 188.114.97.6
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇩🇪 德国 (Germany) 29 - ruzac
+  type: vless
+  server: cloudflare.dev
+  port: 443
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 77yku.ngw0.4j6.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 77yku.ngw0.4j6.hh.vavava.kdns.fr
+- name: 🇩🇪 德国 (Germany) 30 - ruzac
+  type: vless
+  server: kvm1.avenone.ir
+  port: 8402
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 31 - ruzac
   type: vless
   server: 2.26.125.147
   port: 2096
@@ -255,106 +371,20 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: stf94fd.rumedia-cdn.com
-- name: 🇩🇪 德国 (Germany) 22 - ruzac
+- name: 🇩🇪 德国 (Germany) 32 - ruzac
   type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 23 - ruzac
-  type: vless
-  server: 2.26.30.216
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
+  servername: media-se.compressor.work
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇩🇪 德国 (Germany) 24 - ruzac
-  type: vless
-  server: 94.249.225.106
-  port: 443
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: oFuK9Xldbcr064LYxzvc-wGEQpdTs5J3ybFuOXlW0SQ
-  servername: thnet.krusofiya.fun
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 25 - ruzac
-  type: vless
-  server: 94.249.225.106
-  port: 443
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: oFuK9Xldbcr064LYxzvc-wGEQpdTs5J3ybFuOXlW0SQ
-  servername: thnet.krusofiya.fun
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 26 - ruzac
-  type: vless
-  server: 2.26.30.216
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇩🇪 德国 (Germany) 27 - ruzac
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 28 - ruzac
-  type: vless
-  server: 5.45.111.195
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇩🇪 德国 (Germany) 29 - ruzac
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: media-se.compressor.work
 proxy-groups:
 - name: PROXIES
   type: select
@@ -389,6 +419,9 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 27 - ruzac
   - 🇩🇪 德国 (Germany) 28 - ruzac
   - 🇩🇪 德国 (Germany) 29 - ruzac
+  - 🇩🇪 德国 (Germany) 30 - ruzac
+  - 🇩🇪 德国 (Germany) 31 - ruzac
+  - 🇩🇪 德国 (Germany) 32 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -423,5 +456,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 27 - ruzac
   - 🇩🇪 德国 (Germany) 28 - ruzac
   - 🇩🇪 德国 (Germany) 29 - ruzac
+  - 🇩🇪 德国 (Germany) 30 - ruzac
+  - 🇩🇪 德国 (Germany) 31 - ruzac
+  - 🇩🇪 德国 (Germany) 32 - ruzac
 rules:
 - MATCH,PROXIES
