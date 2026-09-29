@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - ruzac
-  type: ss
-  server: 77.83.247.207
-  port: 18285
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  server: 103.71.22.26
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
 - name: 🇫🇮 FI 02 - ruzac
   type: vless
   server: 151.101.56.6
@@ -39,54 +46,6 @@ proxies:
     path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 04 - ruzac
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 05 - ruzac
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 06 - ruzac
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - ruzac
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,10 +54,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - ruzac
   - 🇫🇮 FI 02 - ruzac
   - 🇫🇮 FI 03 - ruzac
-  - 🇫🇮 FI 04 - ruzac
-  - 🇫🇮 FI 05 - ruzac
-  - 🇫🇮 FI 06 - ruzac
-  - 🇫🇮 FI 07 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -107,9 +62,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - ruzac
   - 🇫🇮 FI 02 - ruzac
   - 🇫🇮 FI 03 - ruzac
-  - 🇫🇮 FI 04 - ruzac
-  - 🇫🇮 FI 05 - ruzac
-  - 🇫🇮 FI 06 - ruzac
-  - 🇫🇮 FI 07 - ruzac
 rules:
 - MATCH,PROXIES
