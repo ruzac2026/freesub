@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇾 MY 01 - ruzac",
+        "🇲🇾 MY 02 - ruzac",
+        "🇲🇾 MY 03 - ruzac",
+        "🇲🇾 MY 04 - ruzac",
+        "🇲🇾 MY 05 - ruzac",
+        "🇲🇾 MY 06 - ruzac",
+        "🇲🇾 MY 07 - ruzac",
+        "🇲🇾 MY 08 - ruzac",
+        "🇲🇾 MY 09 - ruzac",
+        "🇲🇾 MY 10 - ruzac"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇾 MY 01 - ruzac",
+        "🇲🇾 MY 02 - ruzac",
+        "🇲🇾 MY 03 - ruzac",
+        "🇲🇾 MY 04 - ruzac",
+        "🇲🇾 MY 05 - ruzac",
+        "🇲🇾 MY 06 - ruzac",
+        "🇲🇾 MY 07 - ruzac",
+        "🇲🇾 MY 08 - ruzac",
+        "🇲🇾 MY 09 - ruzac",
+        "🇲🇾 MY 10 - ruzac"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
