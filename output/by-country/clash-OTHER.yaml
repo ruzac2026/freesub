@@ -6,46 +6,33 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - ruzac
   type: vless
-  server: 188.114.97.6
-  port: 2086
+  server: 104.18.46.234
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls+
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 02 - ruzac
   type: vless
-  server: 188.114.97.6
+  server: 172.64.150.28
   port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 03 - ruzac
   type: vless
   server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 04 - ruzac
-  type: vless
-  server: 104.19.33.237
   port: 443
   uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
@@ -57,20 +44,21 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 05 - ruzac
+- name: 🌐 其他地区 (Other) 04 - ruzac
   type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: geo.shkola112.site
+  port: 443
+  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: geo.shkola112.site
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /api-vless
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 06 - ruzac
+      Host: geo.shkola112.site
+- name: 🌐 其他地区 (Other) 05 - ruzac
   type: vless
   server: 188.114.97.6
   port: 2086
@@ -83,124 +71,19 @@ proxies:
     path: /
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 07 - ruzac
+- name: 🌐 其他地区 (Other) 06 - ruzac
   type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560+
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 08 - ruzac
-  type: vless
-  server: 162.159.24.131
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 09 - ruzac
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 10 - ruzac
-  type: vless
-  server: 188.114.97.6
+  server: 104.18.0.181
   port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /sg-melbi
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 11 - ruzac
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: a0hbm.jvb1.28f.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 12 - ruzac
-  type: vless
-  server: 188.114.97.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 13 - ruzac
-  type: vless
-  server: 172.64.53.55
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 14 - ruzac
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 15 - ruzac
-  type: vless
-  server: 162.159.43.187
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: hhlfy.twiladaphne.ndjp.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -212,15 +95,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 04 - ruzac
   - 🌐 其他地区 (Other) 05 - ruzac
   - 🌐 其他地区 (Other) 06 - ruzac
-  - 🌐 其他地区 (Other) 07 - ruzac
-  - 🌐 其他地区 (Other) 08 - ruzac
-  - 🌐 其他地区 (Other) 09 - ruzac
-  - 🌐 其他地区 (Other) 10 - ruzac
-  - 🌐 其他地区 (Other) 11 - ruzac
-  - 🌐 其他地区 (Other) 12 - ruzac
-  - 🌐 其他地区 (Other) 13 - ruzac
-  - 🌐 其他地区 (Other) 14 - ruzac
-  - 🌐 其他地区 (Other) 15 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -232,14 +106,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 04 - ruzac
   - 🌐 其他地区 (Other) 05 - ruzac
   - 🌐 其他地区 (Other) 06 - ruzac
-  - 🌐 其他地区 (Other) 07 - ruzac
-  - 🌐 其他地区 (Other) 08 - ruzac
-  - 🌐 其他地区 (Other) 09 - ruzac
-  - 🌐 其他地区 (Other) 10 - ruzac
-  - 🌐 其他地区 (Other) 11 - ruzac
-  - 🌐 其他地区 (Other) 12 - ruzac
-  - 🌐 其他地区 (Other) 13 - ruzac
-  - 🌐 其他地区 (Other) 14 - ruzac
-  - 🌐 其他地区 (Other) 15 - ruzac
 rules:
 - MATCH,PROXIES
