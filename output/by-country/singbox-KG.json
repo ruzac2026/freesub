@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01 - ruzac",
+        "🇰🇬 KG 02 - ruzac",
+        "🇰🇬 KG 03 - ruzac",
+        "🇰🇬 KG 04 - ruzac",
+        "🇰🇬 KG 05 - ruzac",
+        "🇰🇬 KG 06 - ruzac",
+        "🇰🇬 KG 07 - ruzac",
+        "🇰🇬 KG 08 - ruzac"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01 - ruzac",
+        "🇰🇬 KG 02 - ruzac",
+        "🇰🇬 KG 03 - ruzac",
+        "🇰🇬 KG 04 - ruzac",
+        "🇰🇬 KG 05 - ruzac",
+        "🇰🇬 KG 06 - ruzac",
+        "🇰🇬 KG 07 - ruzac",
+        "🇰🇬 KG 08 - ruzac"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
