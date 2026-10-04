@@ -82,46 +82,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - ruzac
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - ruzac
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - ruzac
-  type: vless
-  server: 185.158.133.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speed.dulacloud.store
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2
-    headers:
-      Host: speed.dulacloud.store
 proxy-groups:
 - name: PROXIES
   type: select
@@ -133,9 +93,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - ruzac
   - 🇦🇪 阿联酋 (UAE) 05 - ruzac
   - 🇦🇪 阿联酋 (UAE) 06 - ruzac
-  - 🇦🇪 阿联酋 (UAE) 07 - ruzac
-  - 🇦🇪 阿联酋 (UAE) 08 - ruzac
-  - 🇦🇪 阿联酋 (UAE) 09 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -147,8 +104,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - ruzac
   - 🇦🇪 阿联酋 (UAE) 05 - ruzac
   - 🇦🇪 阿联酋 (UAE) 06 - ruzac
-  - 🇦🇪 阿联酋 (UAE) 07 - ruzac
-  - 🇦🇪 阿联酋 (UAE) 08 - ruzac
-  - 🇦🇪 阿联酋 (UAE) 09 - ruzac
 rules:
 - MATCH,PROXIES
