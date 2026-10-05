@@ -6,103 +6,455 @@ log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - ruzac
   type: ss
-  server: 82.38.31.155
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 02 - ruzac
-  type: ss
-  server: 82.38.31.28
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 03 - ruzac
-  type: ss
-  server: 82.38.31.179
+  server: 82.38.31.208
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 02 - ruzac
+  type: vless
+  server: 172.67.155.222
+  port: 443
+  uuid: 82b279c6-5cba-3a96-f8bd-780a00000035
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+- name: 🇳🇱 荷兰 (Netherlands) 03 - ruzac
+  type: ss
+  server: 193.29.139.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 04 - ruzac
   type: ss
-  server: 82.38.31.181
+  server: 82.38.31.34
   port: 8080
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 05 - ruzac
   type: ss
-  server: 82.38.31.66
-  port: 8080
+  server: 82.38.31.175
+  port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 06 - ruzac
   type: ss
-  server: 82.38.31.162
-  port: 443
+  server: 82.38.31.13
+  port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 07 - ruzac
   type: ss
-  server: 193.29.139.132
+  server: 82.38.31.216
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 08 - ruzac
   type: ss
-  server: 82.38.31.205
+  server: 193.29.139.212
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 09 - ruzac
+  type: ss
+  server: 82.38.31.66
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 10 - ruzac
+  type: ss
+  server: 82.38.31.192
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 09 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 11 - ruzac
+  type: ss
+  server: 193.29.139.225
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 12 - ruzac
+  type: vless
+  server: 107.189.18.145
+  port: 443
+  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: restnet.duckdns.org
+- name: 🇳🇱 荷兰 (Netherlands) 13 - ruzac
+  type: vmess
+  server: 159.223.13.109
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 14 - ruzac
+  type: vless
+  server: 63.141.128.22
+  port: 443
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+- name: 🇳🇱 荷兰 (Netherlands) 15 - ruzac
   type: ss
   server: 82.38.31.174
   port: 443
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 10 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 16 - ruzac
   type: ss
-  server: 82.38.31.174
+  server: 82.38.31.82
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 11 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 17 - ruzac
+  type: ss
+  server: 158.173.20.208
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 18 - ruzac
+  type: ss
+  server: 82.38.31.176
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 19 - ruzac
+  type: ss
+  server: 82.38.31.48
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 20 - ruzac
+  type: ss
+  server: 82.38.31.49
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 21 - ruzac
+  type: ss
+  server: 82.38.31.198
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 22 - ruzac
+  type: ss
+  server: 82.38.31.149
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 23 - ruzac
+  type: ss
+  server: 82.38.31.149
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 24 - ruzac
+  type: ss
+  server: 82.38.31.10
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 25 - ruzac
+  type: vless
+  server: 188.114.97.8
+  port: 8443
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
+- name: 🇳🇱 荷兰 (Netherlands) 26 - ruzac
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 27 - ruzac
+  type: ss
+  server: 82.38.31.28
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 28 - ruzac
+  type: ss
+  server: 82.38.31.62
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 29 - ruzac
   type: ss
   server: 193.29.139.202
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 12 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 30 - ruzac
   type: ss
-  server: 82.38.31.35
+  server: 193.29.139.188
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 13 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 31 - ruzac
   type: ss
-  server: 193.29.139.235
-  port: 8080
+  server: 108.181.58.239
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: CJmTCCx7Ltud
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 14 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 32 - ruzac
   type: ss
   server: 82.38.31.186
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 15 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 33 - ruzac
+  type: ss
+  server: 82.38.31.211
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 34 - ruzac
+  type: ss
+  server: 193.29.139.234
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 35 - ruzac
+  type: ss
+  server: 193.29.139.234
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 36 - ruzac
+  type: ss
+  server: 193.29.139.151
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 37 - ruzac
+  type: ss
+  server: 193.29.139.197
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 38 - ruzac
+  type: vless
+  server: 45.130.125.126
+  port: 443
+  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+- name: 🇳🇱 荷兰 (Netherlands) 39 - ruzac
+  type: ss
+  server: 193.29.139.147
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 40 - ruzac
+  type: vless
+  server: 107.189.18.145
+  port: 443
+  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: restnet.duckdns.org
+- name: 🇳🇱 荷兰 (Netherlands) 41 - ruzac
+  type: vless
+  server: 107.189.18.145
+  port: 443
+  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: restnet.duckdns.org
+- name: 🇳🇱 荷兰 (Netherlands) 42 - ruzac
+  type: vmess
+  server: 45.90.106.24
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 43 - ruzac
+  type: vless
+  server: 107.189.18.145
+  port: 443
+  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: restnet.duckdns.org
+- name: 🇳🇱 荷兰 (Netherlands) 44 - ruzac
+  type: ss
+  server: 82.38.31.9
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 45 - ruzac
+  type: ss
+  server: 193.29.139.168
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 46 - ruzac
+  type: ss
+  server: 82.38.31.18
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 47 - ruzac
+  type: vless
+  server: 162.35.242.252
+  port: 443
+  uuid: e3e9805a-6c8b-4edd-8ee8-621df79806eb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ClG6fvriBTK8donGsTlKusJ0dwRCgVDDTAGzAtZzJDY
+  servername: nl.aksay.pro
+  client-fingerprint: random
+- name: 🇳🇱 荷兰 (Netherlands) 48 - ruzac
+  type: vless
+  server: 107.189.18.145
+  port: 443
+  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: restnet.duckdns.org
+- name: 🇳🇱 荷兰 (Netherlands) 49 - ruzac
+  type: ss
+  server: 82.38.31.39
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 50 - ruzac
+  type: ss
+  server: 82.38.31.218
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 51 - ruzac
+  type: ss
+  server: 82.38.31.193
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 52 - ruzac
+  type: ss
+  server: 193.29.139.198
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 53 - ruzac
+  type: ss
+  server: 82.38.31.26
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 54 - ruzac
+  type: ss
+  server: 82.38.31.155
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 55 - ruzac
+  type: ss
+  server: 82.38.31.159
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 56 - ruzac
+  type: ss
+  server: 108.181.126.122
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 57 - ruzac
+  type: ss
+  server: 82.38.31.69
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 58 - ruzac
   type: vless
   server: 85.17.145.65
   port: 12068
@@ -115,42 +467,48 @@ proxies:
     path: /
     headers:
       Host: mypanel.unixzone.us
-- name: 🇳🇱 荷兰 (Netherlands) 16 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 59 - ruzac
   type: ss
-  server: 158.173.20.208
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 82.38.31.201
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 17 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 60 - ruzac
   type: ss
-  server: 193.29.139.179
+  server: 82.38.31.42
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 18 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 61 - ruzac
   type: ss
-  server: 82.38.31.18
+  server: 82.38.31.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 62 - ruzac
+  type: vless
+  server: 163.172.214.188
+  port: 80
+  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: SC-TheNetherlands1.09vpn.com
+- name: 🇳🇱 荷兰 (Netherlands) 63 - ruzac
+  type: ss
+  server: 82.38.31.164
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 19 - ruzac
-  type: ss
-  server: 82.38.31.36
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 20 - ruzac
-  type: ss
-  server: 108.181.126.122
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 21 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 64 - ruzac
   type: vmess
   server: 151.243.173.119
   port: 33736
@@ -165,373 +523,14 @@ proxies:
     path: /vmess-ws
     headers:
       Host: ''
-- name: 🇳🇱 荷兰 (Netherlands) 22 - ruzac
-  type: ss
-  server: 82.38.31.198
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 23 - ruzac
-  type: ss
-  server: 82.38.31.218
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 24 - ruzac
-  type: ss
-  server: 82.38.31.176
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 25 - ruzac
-  type: ss
-  server: 82.38.31.42
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 26 - ruzac
-  type: ss
-  server: 82.38.31.61
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 27 - ruzac
-  type: ss
-  server: 82.38.31.175
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 28 - ruzac
-  type: ss
-  server: 82.38.31.175
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 29 - ruzac
-  type: ss
-  server: 82.38.31.2
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 30 - ruzac
-  type: ss
-  server: 82.38.31.207
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 31 - ruzac
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 32 - ruzac
-  type: vless
-  server: 89.125.96.93
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇳🇱 荷兰 (Netherlands) 33 - ruzac
-  type: ss
-  server: 82.38.31.164
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 34 - ruzac
-  type: ss
-  server: 82.38.31.9
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 35 - ruzac
-  type: ss
-  server: 82.38.31.49
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 36 - ruzac
-  type: ss
-  server: 193.29.139.225
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 37 - ruzac
-  type: vless
-  server: 107.189.18.145
-  port: 443
-  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: restnet.duckdns.org
-- name: 🇳🇱 荷兰 (Netherlands) 38 - ruzac
-  type: vless
-  server: 107.189.18.145
-  port: 443
-  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: restnet.duckdns.org
-- name: 🇳🇱 荷兰 (Netherlands) 39 - ruzac
-  type: vless
-  server: 107.189.18.145
-  port: 443
-  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: restnet.duckdns.org
-- name: 🇳🇱 荷兰 (Netherlands) 40 - ruzac
-  type: vmess
-  server: 45.90.106.24
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 41 - ruzac
-  type: ss
-  server: 82.38.31.149
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 42 - ruzac
-  type: ss
-  server: 193.29.139.198
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 43 - ruzac
-  type: ss
-  server: 82.38.31.82
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 44 - ruzac
-  type: ss
-  server: 82.38.31.26
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 45 - ruzac
-  type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 46 - ruzac
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 8453bdb7-dd58-419d-b002-9456dd2e73d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pan2e.global.ssl.fastly.net
-- name: 🇳🇱 荷兰 (Netherlands) 47 - ruzac
-  type: ss
-  server: 82.38.31.199
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 48 - ruzac
-  type: vless
-  server: 194.93.61.20
-  port: 443
-  uuid: 65616081-1772-49d7-a793-42bc13d22f69
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: nl-1-2.imnotgay.party
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 49 - ruzac
-  type: vless
-  server: 162.35.242.252
-  port: 443
-  uuid: e3e9805a-6c8b-4edd-8ee8-621df79806eb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: ClG6fvriBTK8donGsTlKusJ0dwRCgVDDTAGzAtZzJDY
-  servername: nl.aksay.pro
-  client-fingerprint: random
-- name: 🇳🇱 荷兰 (Netherlands) 50 - ruzac
-  type: ss
-  server: 193.29.139.147
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 51 - ruzac
-  type: ss
-  server: 82.38.31.48
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 52 - ruzac
-  type: ss
-  server: 82.38.31.34
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 53 - ruzac
-  type: ss
-  server: 193.29.139.223
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 54 - ruzac
-  type: ss
-  server: 193.29.139.234
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 55 - ruzac
-  type: vmess
-  server: 159.223.13.109
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 56 - ruzac
-  type: vless
-  server: 163.172.214.188
-  port: 80
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: SC-TheNetherlands1.09vpn.com
-- name: 🇳🇱 荷兰 (Netherlands) 57 - ruzac
-  type: ss
-  server: 82.38.31.164
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 58 - ruzac
-  type: ss
-  server: 82.38.31.7
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 59 - ruzac
-  type: ss
-  server: 82.38.31.193
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 60 - ruzac
-  type: ss
-  server: 108.181.126.122
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 61 - ruzac
-  type: ss
-  server: 193.29.139.204
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 62 - ruzac
-  type: ss
-  server: 82.38.31.69
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 63 - ruzac
-  type: ss
-  server: 82.38.31.47
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 64 - ruzac
-  type: ss
-  server: 82.38.31.201
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 65 - ruzac
   type: ss
-  server: 193.29.139.168
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 66 - ruzac
-  type: ss
-  server: 82.38.31.214
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 67 - ruzac
-  type: ss
-  server: 82.38.31.17
+  server: 82.38.31.36
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 68 - ruzac
+- name: 🇳🇱 荷兰 (Netherlands) 66 - ruzac
   type: vless
   server: 89.125.96.74
   port: 2053
@@ -545,164 +544,72 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: wss.zazazuza.ru
-- name: 🇳🇱 荷兰 (Netherlands) 69 - ruzac
-  type: vless
-  server: 89.125.96.89
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
+- name: 🇳🇱 荷兰 (Netherlands) 67 - ruzac
+  type: vmess
+  server: 45.90.106.24
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇳🇱 荷兰 (Netherlands) 70 - ruzac
+  servername: ''
+- name: 🇳🇱 荷兰 (Netherlands) 68 - ruzac
   type: ss
-  server: 82.38.31.216
+  server: 82.38.31.199
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 69 - ruzac
+  type: ss
+  server: 82.38.31.61
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 70 - ruzac
+  type: ss
+  server: 82.38.31.175
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 71 - ruzac
   type: ss
-  server: 82.38.31.39
+  server: 82.38.31.174
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 72 - ruzac
   type: ss
-  server: 82.38.31.183
-  port: 8080
+  server: 82.38.31.162
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: 🇳🇱 荷兰 (Netherlands) 73 - ruzac
-  type: ss
-  server: 82.38.31.204
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 6ead3f4c-023f-4322-b5c4-ac4e327d259d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pannn1.global.ssl.fastly.net
 - name: 🇳🇱 荷兰 (Netherlands) 74 - ruzac
   type: ss
-  server: 193.29.139.197
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 75 - ruzac
-  type: ss
-  server: 82.38.31.149
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 76 - ruzac
-  type: ss
-  server: 82.38.31.13
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 77 - ruzac
-  type: vmess
-  server: 45.90.106.24
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 78 - ruzac
-  type: vmess
-  server: 45.90.106.24
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 79 - ruzac
-  type: ss
-  server: 82.38.31.203
+  server: 193.29.139.132
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 80 - ruzac
-  type: ss
-  server: 82.38.31.191
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 81 - ruzac
-  type: ss
-  server: 82.38.31.62
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 82 - ruzac
-  type: ss
-  server: 158.173.20.208
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 83 - ruzac
-  type: ss
-  server: 193.29.139.212
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 84 - ruzac
-  type: ss
-  server: 82.38.31.156
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 85 - ruzac
-  type: vmess
-  server: 159.223.13.109
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇳🇱 荷兰 (Netherlands) 86 - ruzac
-  type: ss
-  server: 82.38.31.192
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 87 - ruzac
-  type: ss
-  server: 82.38.31.184
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇳🇱 荷兰 (Netherlands) 88 - ruzac
-  type: ss
-  server: 108.181.58.239
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: CJmTCCx7Ltud
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -783,20 +690,6 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 72 - ruzac
   - 🇳🇱 荷兰 (Netherlands) 73 - ruzac
   - 🇳🇱 荷兰 (Netherlands) 74 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 75 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 76 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 77 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 78 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 79 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 80 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 81 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 82 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 83 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 84 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 85 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 86 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 87 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 88 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -876,19 +769,5 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 72 - ruzac
   - 🇳🇱 荷兰 (Netherlands) 73 - ruzac
   - 🇳🇱 荷兰 (Netherlands) 74 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 75 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 76 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 77 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 78 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 79 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 80 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 81 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 82 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 83 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 84 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 85 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 86 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 87 - ruzac
-  - 🇳🇱 荷兰 (Netherlands) 88 - ruzac
 rules:
 - MATCH,PROXIES
