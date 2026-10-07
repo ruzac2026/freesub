@@ -4,23 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇪 阿联酋 (UAE) 01 - ruzac
+- name: 🇦🇷 AR 01 - ruzac
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - ruzac
-  type: vless
-  server: 147.78.0.186
-  port: 2053
+  server: 131.255.6.88
+  port: 443
   uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
   tls: true
@@ -36,14 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇪 阿联酋 (UAE) 01 - ruzac
-  - 🇦🇪 阿联酋 (UAE) 02 - ruzac
+  - 🇦🇷 AR 01 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇪 阿联酋 (UAE) 01 - ruzac
-  - 🇦🇪 阿联酋 (UAE) 02 - ruzac
+  - 🇦🇷 AR 01 - ruzac
 rules:
 - MATCH,PROXIES
