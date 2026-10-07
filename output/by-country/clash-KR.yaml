@@ -25,40 +25,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - ruzac
-  type: ss
-  server: 52.78.59.52
-  port: 8443
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 04 - ruzac
-  type: ss
-  server: 141.164.45.187
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 05 - ruzac
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - ruzac
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - ruzac
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -69,8 +35,8 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08 - ruzac
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 04 - ruzac
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -85,7 +51,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: ''
-- name: 🇰🇷 韩国 (South Korea) 09 - ruzac
+- name: 🇰🇷 韩国 (South Korea) 05 - ruzac
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -99,15 +65,35 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 'null'
-- name: 🇰🇷 韩国 (South Korea) 10 - ruzac
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 06 - ruzac
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - ruzac
   type: ss
   server: 141.164.45.187
   port: 6679
   cipher: aes-256-gcm
   password: TEzjfAYq2IjtuoS
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 11 - ruzac
+- name: 🇰🇷 韩国 (South Korea) 08 - ruzac
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 09 - ruzac
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -118,7 +104,14 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 10 - ruzac
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,7 +127,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - ruzac
   - 🇰🇷 韩国 (South Korea) 09 - ruzac
   - 🇰🇷 韩国 (South Korea) 10 - ruzac
-  - 🇰🇷 韩国 (South Korea) 11 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,6 +142,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - ruzac
   - 🇰🇷 韩国 (South Korea) 09 - ruzac
   - 🇰🇷 韩国 (South Korea) 10 - ruzac
-  - 🇰🇷 韩国 (South Korea) 11 - ruzac
 rules:
 - MATCH,PROXIES
