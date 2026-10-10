@@ -6,35 +6,21 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - ruzac
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
     headers:
-      Host: ''
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - ruzac
-  type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - ruzac
   type: vmess
   server: 8.217.13.103
   port: 443
@@ -50,7 +36,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: qtkdr8jxe3wefxjm.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - ruzac
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - ruzac
   type: vless
   server: 34.92.19.135
   port: 443
@@ -61,8 +47,52 @@ proxies:
   reality-opts:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - ruzac
+  type: vmess
+  server: 47.83.207.148
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - ruzac
+  type: vmess
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - ruzac
+  type: vless
+  server: 34.92.19.135
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - ruzac
   type: vless
   server: 43.129.80.179
   port: 8443
@@ -86,6 +116,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - ruzac
   - 🇭🇰 中国香港 (Hong Kong) 04 - ruzac
   - 🇭🇰 中国香港 (Hong Kong) 05 - ruzac
+  - 🇭🇰 中国香港 (Hong Kong) 06 - ruzac
+  - 🇭🇰 中国香港 (Hong Kong) 07 - ruzac
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -96,5 +128,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - ruzac
   - 🇭🇰 中国香港 (Hong Kong) 04 - ruzac
   - 🇭🇰 中国香港 (Hong Kong) 05 - ruzac
+  - 🇭🇰 中国香港 (Hong Kong) 06 - ruzac
+  - 🇭🇰 中国香港 (Hong Kong) 07 - ruzac
 rules:
 - MATCH,PROXIES
