@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 BY 01 - ruzac"
+        "🇧🇾 BY 01 - ruzac",
+        "🇧🇾 BY 02 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 BY 01 - ruzac"
+        "🇧🇾 BY 01 - ruzac",
+        "🇧🇾 BY 02 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
