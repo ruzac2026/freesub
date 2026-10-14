@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - ruzac",
-        "🇧🇷 BR 02 - ruzac"
+        "🇱🇰 LK 01 - ruzac",
+        "🇱🇰 LK 02 - ruzac",
+        "🇱🇰 LK 03 - ruzac"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - ruzac",
-        "🇧🇷 BR 02 - ruzac"
+        "🇱🇰 LK 01 - ruzac",
+        "🇱🇰 LK 02 - ruzac",
+        "🇱🇰 LK 03 - ruzac"
       ],
       "url": "https://www.google.com/generate_204"
     },
